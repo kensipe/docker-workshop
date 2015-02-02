@@ -16,5 +16,7 @@ You will need to install:
 ## Labs
 
 [Lab 1: Intro to Docker](lab1.md)
-[Lab 2: Docker Builds and Ports](lab2)
-[Lab 3: Mesos Cluster](lab3)
+
+[Lab 2: Docker Builds and Ports](lab2.md)
+
+[Lab 3: Mesos Cluster](lab3.md)
