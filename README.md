@@ -20,3 +20,5 @@ You will need to install:
 [Lab 2: Docker Builds and Ports](lab2.md)
 
 [Lab 3: Mesos Cluster](lab3.md)
+
+[Lab 4: Docker Compose](lab4.md)
