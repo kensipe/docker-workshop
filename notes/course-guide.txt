@@ -1,0 +1,8 @@
+course guide
+
+1. download and install docker or
+2. provision a GCE or digitalOcean
+Google Cloud Platform: EM4GCE
+https://cloud.google.com/developers/starterpack/
+
+DigitalOcean: EM4DO

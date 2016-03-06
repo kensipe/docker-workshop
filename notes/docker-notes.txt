@@ -1,0 +1,71 @@
+
+
+Tomcat lab with java app
+	issues
+	ports - config x2
+
+Docker - tour
+
+docker cheatsheet
+	docker redis example (logs)
+	
+docker via command-line
+	
+	
+docker via Dockerfile
+	docker build -t="kensipe/tomcat-7" .
+	
+docker networking
+	host, bridge
+
+	
+Building a Docker container 
+Setting up a private Docker Repository 
+	docker run -p 5000:5000 registry
+	In order to push to this repository tag image with repositoryHostName:5000/imageName then push this tag.
+	
+	
+Setting up an Apache Mesos Cluster 
+Deploying Docker into a Docker 
+
+Scaling to multiple instances 
+	marathon deploy
+	** 
+
+Load balancing behind HAProxy 
+	haproxy config
+	marathon-haproxy-bridge
+	** lab
+	
+Service Discovery
+	options
+	
+	
+TIPS
+last docker
+alias dl='docker ps -l -q'
+
+get IP address
+docker inspect `dl` | grep IPAddress | cut -d '"' -f 4
+
+ENV
+docker run --rm ubuntu env
+
+image depends graph
+docker images -viz | dot -Tpng -o docker.png
+
+kill all the running
+docker kill $(docker ps -q)
+
+Copy files into a container
+docker cp `dl`:/etc/passwd .
+
+mount file into a container
+docker run -v `pwd`:/root/test ubuntu 
+
+NOTES:
+docker run -it --rm dockerfile/java:oracle-java8 java -version
+docker run -it --rm dockerfile/java java
+
+
+
