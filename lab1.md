@@ -2,7 +2,7 @@
 
 ### Prerequisite
 	Docker installed
-	boot2docker installed (Mac/Win)
+	docker-machine installed (Mac/Win)
 	Good internet connection
 
 ### docker in interactive mode
@@ -15,14 +15,16 @@ Running docker in interactive mode allows a developer to:
 
 We will be working with 2 images for these labs.  `ubuntu` and `kensipe/tomcat`.  The first time they are reference it will take several minutes as these images are pulled for the public repository.  After that command-line references will run very quickly.  It may be best to pull these images prior to starting the lab.  To pull run: `docker pull ubuntu` and `docker pull kensipe/tomcat`.
 
+If you haven't yet, start the docker-machine: `docker-machine start` and set the environment `eval $(docker-machine env)`.
+
 1. enter interactive mode:
- 
+
 	```
 	docker run -it ubuntu /bin/bash` or `docker run -it ubuntu
 	```
 
 2. add a text file named `owner.txt` with your name in it.
-	
+
 	```
 	echo "ken sipe" > owner.txt
 	```
@@ -34,7 +36,7 @@ We will be working with 2 images for these labs.  `ubuntu` and `kensipe/tomcat`.
 	```
 	docker ps
 	```
-	
+
 **NOTE:** Experiment with variations here.  `docker ps -a`, `docker ps -l`, `docker ps -q`, `docker ps -lq`
 
 **NOTE:**  It is common to set an alias for dl (docker last): `alias dl='docker ps -lq'`
@@ -64,6 +66,25 @@ We will be working with 2 images for these labs.  `ubuntu` and `kensipe/tomcat`.
 	docker run owner cat owner.txt
 	```
 
-### FINISHED	
+### Installing commands
+
+1. enter interactive mode
+
+`docker run -it ubuntu`
+
+2. install figlet
+
+`apt-get update && apt-get install figlet`
+
+3. commit image
+
+```
+docker commit `dl` figlet
+```
+
+4. run container
+
+`docker run figlet figlet hello`
 
 
+### FINISHED

@@ -1,5 +1,8 @@
 # Lab 4: Docker Compose
 
+This lab is a derivative of a tutorial provided by Docker on the [docker compose website](https://docs.docker.com/compose/).  It demonstrates bare essentials of starting
+a docker-composed environment.
+
 1. Create an empty project directory.
 
 

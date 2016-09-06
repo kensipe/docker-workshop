@@ -1,11 +1,11 @@
 # Lab 3: Scaling Docker with Mesos
 
 ### Prerequisite
-	Working Mesos Cluster
-		Google Compute Engine: google.mesosphere.io
-		DigitalOcean: digitalocean.mesosphere.io
-		USB
-		
+	Working DC/OS Cluster
+		AWS
+		Mini-Mesos
+
+[Intro material](https://github.com/mesosphere/velocity-training/tree/master/velocity-training/mesos-marathon) gives a brief overview.
 
 ### Deploying to Mesos
 
@@ -42,6 +42,4 @@ In the `mesos` directory there are a number of files for deploying docker instan
 
 
 
-### FINISHED	
-
-
+### FINISHED
